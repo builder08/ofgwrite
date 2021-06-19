@@ -29,6 +29,9 @@
 #include <stdlib.h>
 #include <errno.h>
 #include <sys/types.h>
+#ifdef __GLIBC__
+#include <sys/sysmacros.h>
+#endif
 #include <sys/stat.h>
 #include <sys/ioctl.h>
 #include <mtd/mtd-user.h>
