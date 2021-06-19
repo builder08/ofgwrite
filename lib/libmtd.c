@@ -29,6 +29,9 @@
 #include <fcntl.h>
 #include <dirent.h>
 #include <sys/types.h>
+#ifdef __GLIBC__
+#include <sys/sysmacros.h>
+#endif
 #include <sys/stat.h>
 #include <sys/ioctl.h>
 #include <inttypes.h>
